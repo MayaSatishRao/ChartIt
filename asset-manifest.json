@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ChartIt/static/css/main.d1060d11.css",
+    "main.js": "/ChartIt/static/js/main.3ffb5473.js",
+    "static/media/dataset-image.png": "/ChartIt/static/media/dataset-image.29ba67d0561784cb924a.png",
+    "index.html": "/ChartIt/index.html",
+    "main.d1060d11.css.map": "/ChartIt/static/css/main.d1060d11.css.map",
+    "main.3ffb5473.js.map": "/ChartIt/static/js/main.3ffb5473.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1060d11.css",
+    "static/js/main.3ffb5473.js"
+  ]
+}
