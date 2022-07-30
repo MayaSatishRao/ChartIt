@@ -1,0 +1,39 @@
+.graph-container{
+    
+    height:900px;
+    width:900px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:950px){
+    .graph-container{
+        height:750px;
+        width:750px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .graph-container{
+        height:650px;
+        width:650px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .graph-container{
+        height:550px;
+        width:550px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .graph-container{
+        height:400px;
+        width:400px;
+    }
+}
+
+
+
+
+

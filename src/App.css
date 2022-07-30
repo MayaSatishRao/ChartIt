@@ -1,0 +1,89 @@
+
+h1{
+   text-align: center;
+   margin: 3rem 0 0;
+   font-size: 3.5rem;
+}
+
+.header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.header p{
+   font-size: 1.5rem;
+   margin-left: auto;
+   margin-right:auto;
+}
+.instruction{
+   text-align: left;
+}
+
+.img-inst{
+    display:flex;
+    width:80vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img-inst ol{
+   width:600px;
+   font-size: 20px;
+}
+
+.img-inst img{
+   width:500px;
+}
+
+@media screen and (max-width:1000px){
+   .img-inst ol{
+      width:400px;
+      font-size: 15px;
+   }
+   
+   .img-inst img{
+      width:300px;
+   }
+}
+
+@media screen and (max-width:700px){
+   .header p{
+      font-size: 1rem;
+      text-align: center;
+   }
+   .img-inst ol{
+      width:350px;
+      font-size: 15px;
+   }
+   
+   .img-inst img{
+      width:225px;
+   }
+}
+
+@media screen and (max-width:600px){
+   .img-inst ol{
+      width:250px;
+      font-size: 13px;
+   }
+   
+   .img-inst img{
+      width:175px;
+   }
+}
+
+@media screen and (max-width:500px){
+   .img-inst{
+      flex-direction: column;
+   }
+   .img-inst ol{
+      width:300px;
+      font-size: 13px;
+      margin-bottom: 20px;
+   }
+   
+   .img-inst img{
+      width:250px;
+   }
+}
