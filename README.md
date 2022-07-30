@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# ChartIt
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project which takes a .csv file and generates bar graph and line graph of the data present in the csv file.
 
 ## Demo
 ![Login](https://github.com/MayaSatishRao/ChartIt/blob/main/chartit-demo.gif)
