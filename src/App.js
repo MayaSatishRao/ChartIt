@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import Graph from './components/Graph';
 import './App.css';
 import FileUpload from "./components/FileUpload";
-import image from "./images/dataset-image.png"
+import image from "./images/dataset-image.png";
+import exportAsImage from './components/DownloadImage';
 
 
 const data = [["Graph-Title","X-axis label","Y-axis label"]
@@ -24,10 +25,11 @@ function App() {
 
   const [chartData, setChartData] = useState(data);
   const [type,setType] = useState("bar");
+
   return (
     <div className='header'>
     <h1>CHARTIT </h1>
-    <p> Upload your csv file and see the chart!</p>
+    <p> Upload your csv file and get the chart!</p>
     <p className='instruction'>Please make sure that your csv file has the following format:</p>
     <div className="img-inst">
     <ol>
@@ -38,7 +40,13 @@ function App() {
     <img src={image}/>
     </div>
       <FileUpload changeState={setChartData} changeType={setType}/>
-      <Graph chartData={chartData} type={type}/>
+      <div id="graphImage">
+      <Graph  chartData={chartData} type={type}/>
+      </div>
+      <button className="down-btn" onClick={()=>{
+        const el = window.document.getElementById("graphImage");
+        exportAsImage(el,"chart");
+      }}>Download</button>
     </div>
   );
 }
