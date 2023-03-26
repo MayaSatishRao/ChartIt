@@ -47,10 +47,10 @@ function createOptions(arr){
   return options;
 }
 function createLabels(arr){
-       if(arr!=undefined){
+       if(arr!==undefined){
         let labels = [];
         for(let i=2;i<arr.length;i++)
-              if(arr[i][0].length!=0)
+              if(arr[i][0].length!==0)
             labels.push(arr[i][0]);
          return (labels); 
        }
@@ -65,7 +65,7 @@ function createDataSets(arr){
       for(let i=1;i<arr[1].length;i++){
             let dataArray = [];
             for(let j=2;j<arr.length;j++){
-                if(arr[j][i]!=undefined)
+                if(arr[j][i]!==undefined)
                 dataArray.push(arr[j][i]);
             }
             
