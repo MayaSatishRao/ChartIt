@@ -37,7 +37,7 @@ function App() {
       <li>The first column contains the category labels of x-axis</li>
       <li>The next columns contain the data points for each dataset where the first row of each column contains the name of dataset</li>
     </ol>
-    <img src={image}/>
+    <img src={image} alt="sample-image"/>
     </div>
       <FileUpload changeState={setChartData} changeType={setType}/>
       <div id="graphImage">
